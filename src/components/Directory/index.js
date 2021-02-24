@@ -59,14 +59,17 @@ export default class Directory extends Component {
                     <strong className="col-3 m-auto">Email</strong>
                     <strong className="col-2 m-auto">DOB</strong>
                 </li>
-                {this.state.employees.map(data => <Employee
-                    key={data.login.uuid}
-                    image={data.picture.medium}
-                    name={`${data.name.first} ${data.name.last}`}
-                    phone={data.phone}
-                    email={data.email}
-                    dob={data.dob.date}
-                />)}
+                {this.state.employees
+                    .filter(data => `${data.name.first} ${data.name.last}`.toLowerCase().includes(this.props.query.toLowerCase()))
+                    .map(data => <Employee
+                        key={data.login.uuid}
+                        image={data.picture.medium}
+                        name={`${data.name.first} ${data.name.last}`}
+                        phone={data.phone}
+                        email={data.email}
+                        dob={data.dob.date}
+                    />)
+                }
             </ul>
         );
     }
