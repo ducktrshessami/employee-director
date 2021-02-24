@@ -15,3 +15,8 @@
 .employee-img {
     max-height: 5rem;
 }
+
+.sortable {
+    user-select: none;
+    cursor: pointer;
+}
