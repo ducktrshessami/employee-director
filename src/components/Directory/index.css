@@ -1,0 +1,17 @@
+.directory {
+    width: 90%;
+    padding: 0;
+    list-style: none;
+}
+
+.directory li {
+    border-top: 0.15rem solid #E3E2E3;
+}
+
+.directory li:nth-child(even) {
+    background-color: #F3F2F3;
+}
+
+.employee-img {
+    max-height: 5rem;
+}
