@@ -1,3 +1,3 @@
 # employee-directory
 
-Deployment: [employee-directory](https://duck-employee-dir.herokuapp.com/)
+Deployment: [employee-directory](https://ducktrshessami.github.io/employee-directory)
